@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        #yes{
+            position: relative;
+            background-color:aqua;
+        }
+        #no{
+            position: relative;
+            transition: all 0.3s;
+            background-color:aqua;
+            
+        }
+        .btn-container{
+            display: inline-block;
+            margin-right: 300px;
+            width: 50px;
+            left: 34%;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h1>8/3 này đi date với anh nhé</h1>
+        <img src="source.gif" alt="pls cat heheeh">
+        <div id="yes" class="btn-container">
+            <a href="ok.html"><button type="button" id="yes-btn">Oke</button></a>
+        </div>
+
+        <div id="no" class="btn-container">
+            <button type="button" id="no-btn">Đéo</button>
+        </div>
+    </main>
+
+    <script>
+        const yes = document.getElementById('yes')
+        const no = document.getElementById('no')
+
+        no.addEventListener('mouseover', () => {
+            const x = Math.floor(Math.random() * (window.innerWidth - 500))
+            const y = Math.floor(Math.random() * (window.innerHeight - 500))
+
+            no.style.left = `${x}px`
+            no.style.top = `${y}px`
+            
+            no.style.transform = "scale(0.3)";
+            
+        })
+    </script>
+</body>
+</html>

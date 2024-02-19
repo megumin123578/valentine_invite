@@ -1,0 +1,19 @@
+body{
+    background-color: #2D9596;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    color: #F1FADA;
+    font-size: 150px;
+    text-align: center;
+}
+img{
+    height: 400px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
